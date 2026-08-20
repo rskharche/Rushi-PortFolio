@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+body{
+    font-family:'space Grotek',sans-serif;
+}
+
+h1,h2,h3,h4{
+        font-family:'orbitron',sans-serif;
+}
+
+@keyframes float{
+    0%, 100%{transform: translatey(0);}
+}
+
+.floating{
+    animation: float 6s ease-in-out infinite;
+}
+
+.font-orbitron{
+    font-family: 'Orbitron';
+}
