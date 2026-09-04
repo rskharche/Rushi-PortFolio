@@ -13,7 +13,7 @@ function Hero() {
                     font-bold mb-10'>
                             <span className='text-zinc-700'>Fullstack Developer</span>
                             <br />
-                            <span className='text-cyan-700 text-4xl'>Node Js,React Js</span>
+                            <span className='text-cyan-700 text-4xl'>Node Js,React Js,Next Js</span>
 
                         </h1>
 

@@ -14,7 +14,7 @@ function About() {
                             <span>Me</span>
                         </h2>
                         <p className='text-md mb-2 leading-8'>JavaScript and Front-End professional with 4+ years of experience developing, debugging, reviewing, and maintaining
-                            web applications and ERP systems using JavaScript, AngularJS, jQuery, Node.js, HTML, CSS, REST APIs, and
+                            web applications and ERP systems using JavaScript, AngularJS, jQuery, Node.js,React Js,Next Js, HTML, CSS, REST APIs, and
                             Microsoft SQL Server.</p>
 
                         <p className='text-md mb-2 leading-8'> Strong hands-on experience in client-side debugging, code analysis, API integration, troubleshooting, database

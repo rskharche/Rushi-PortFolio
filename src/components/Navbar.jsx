@@ -1,5 +1,5 @@
 import React from 'react'
-import { navMenu } from '../assets/asstes'
+import { navMenu,assets } from '../assets/asstes'
 import { FaArrowRight } from 'react-icons/fa6'
 
 const Navbar = () => {
@@ -11,10 +11,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <div className="text-2xl font-bold text-zinc-800">
-                        <span>THE-</span>
-                        <span className="text-teal-800 font-orbitron">
-                            RUSHIKESH
-                        </span>
+                        <img src={assets.rushiLogo} alt="Logo" className="h-20 w-auto" />
                     </div>
 
                     {/* Menu */}
