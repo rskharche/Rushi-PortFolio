@@ -1,6 +1,7 @@
 import React from 'react'
 import { projectData } from '../assets/asstes'
 
+
 function Work() {
   return (
     <div id='Work' className='py-20'>
@@ -13,36 +14,59 @@ function Work() {
           <p className='text-xl max-w-3xl mx-auto'>Cutting-edge web appliccation built with modern technologies</p>
         </div>
 
-        <div className=' grid grid-cols-1 md:grid-cols-4 gap-6 mb-12'>
-          {
-            projectData.map((project, index) => (
-              <div key={index} className='group rounded *:overflow-hidden hover:shadow-lg
-               transition cursor-pointer border border-gray-200
-             hover:-translate-y-1 duration-300'>
-                <div className='realative flex items-center justify-center'>
-                  <img className='group-hover:opacity-100' src={project.image} alt='' />
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    {
+        projectData.map((project, index) => (
+            <a
+                key={index}
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded overflow-hidden hover:shadow-lg
+                           transition cursor-pointer border border-gray-200
+                           hover:-translate-y-1 duration-300 block"
+            >
+
+                <div className="relative flex items-center justify-center overflow-hidden">
+                    <img
+                        className="w-full h-56 object-cover group-hover:scale-105 transition duration-300"
+                        src={project.image}
+                        alt={project.title}
+                    />
                 </div>
 
-                <div className='p-6'>
-                  <h3 className=' text-xl font-bold mb-2'>{project.title}</h3>
-                  <p className='text-slate-900 text-sm'>{project.description}</p>
-                  <div className=' flex flex-wrap gap-2 mt-6'>
-                      {
-                        project.tech.map((language,index)=>(
-                          <span key={index} className=' text-xs px-4 py-1 bg-gray-100
-                          rounded-full font-semibold '>
-                            {language}
-                            </span>
-                        ))
-                      }
+                <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">
+                        {project.title}
+                    </h3>
+
+                    <p className="text-slate-900 text-sm">
+                        {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mt-6">
+                        {
+                            project.tech.map((language, index) => (
+                                <span
+                                    key={index}
+                                    className="text-xs px-4 py-1 bg-gray-100
+                                               rounded-full font-semibold"
+                                >
+                                    {language}
+                                </span>
+                            ))
+                        }
+                    </div>
+
+                    <div className="mt-5 text-sm font-semibold text-indigo-600">
+                        View Live Website ↗
                     </div>
                 </div>
-              </div>
-              
-            ))
-          }
 
-        </div>
+            </a>
+        ))
+    }
+</div>
 
       </div>
 

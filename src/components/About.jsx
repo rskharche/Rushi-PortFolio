@@ -1,7 +1,7 @@
 import React from 'react'
 import { assets, profileData } from '../assets/asstes'
-import { FaCode } from 'react-icons/fa6'
-
+import { FaArrowRight, FaCode } from 'react-icons/fa6'
+import resume from '../assets/resume.pdf'
 function About() {
     return (
         <div id='About' className='py-20'>
@@ -47,12 +47,20 @@ function About() {
                             ))
                         }
                     </div>
-               <button className='px-8 py-4 bg-zinc-700
-               text-white rounded-full cursor-pointer
-               transition duration-300
-               hover:bg-zinc-900'>
-                Download resume
-               </button>
+                 <a
+    href={resume}
+    download="Rushikesh-Kharche-Resume.pdf"
+    className="w-full px-10 py-4 border border-zinc-800
+               text-center rounded-full
+               flex items-center justify-center gap-2
+               cursor-pointer text-slate-500
+               hover:text-slate-800 hover:bg-gray-300
+               hover:-translate-y-1
+               transition duration-300"
+>
+    Resume
+    <FaArrowRight className="text-gray-500 text-sm" />
+</a>
                      </div>
                         <div className='order-1 lg:order-2 flex justify-center'>
                             <div className=' relative w-full max-w-md'>

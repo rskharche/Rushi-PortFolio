@@ -1,7 +1,7 @@
 import React from 'react'
-import { navMenu,assets } from '../assets/asstes'
+import { navMenu, assets } from '../assets/asstes'
 import { FaArrowRight } from 'react-icons/fa6'
-
+import resume from "../assets/resume.pdf";
 const Navbar = () => {
     return (
         <div className="fixed top-0 left-0 w-full py-4 z-50 backdrop-blur-3xl">
@@ -26,15 +26,18 @@ const Navbar = () => {
                             </a>
                         ))}
                     </div>
-                          {/* Buttons */}
-                    <div>
-                        <button className='px-10 py-4 border-zinc-800 border 
-                        rounded-full flex items-center gap-2 cursor-pointer
-                        text-slate-500 hover:text-slate-800 hover:translate-y-1 transition duration-300'>
+                    {/* Buttons */}
+                    <a
+                        href={resume}
+                        download="Rushikesh-Kharche-Resume.pdf"
+                        className="px-10 py-4 border-zinc-800 border 
+    rounded-full flex items-center gap-2 cursor-pointer
+    text-slate-500 hover:text-slate-800 hover:translate-y-1
+    transition duration-300"
+                    >
                         Resume
-                        <FaArrowRight className='text-gray-500 text-sm' />
-                        </button>
-                    </div>
+                        <FaArrowRight className="text-gray-500 text-sm" />
+                    </a>
 
                 </div>
 
